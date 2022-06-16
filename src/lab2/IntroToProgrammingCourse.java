@@ -1,7 +1,5 @@
 package lab2;
 
-import javax.swing.JOptionPane;
-
 /**
  * Describe responsibilities here.
  *
@@ -13,21 +11,25 @@ public class IntroToProgrammingCourse implements Course {
     private String courseNumber;
     private double courseCredits;
 
+    @Override
     public final String CourseName() {
         courseName = "Intro to Programming";
         return courseName;
     }
 
+    @Override
     public final String CourseNumber() {
         courseNumber = "102-1";
         return courseNumber;
     }
 
+    @Override
     public final double CourseCredits() {
         courseCredits = 2;
         return courseCredits;
     }
 
+    @Override
     public final String Prerequisites() {
         return null;
     }
